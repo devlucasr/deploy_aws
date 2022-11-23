@@ -7,7 +7,7 @@ const port = 8000
 
 
 app.get('/',(request, response)=>{
-    return response.end('Bem vindo ao Super Servidor')
+    return response.end('Bem vindo ao Super Servidor do Lucas')
 });
 
 app.get('/somar',(request, response)=>{
