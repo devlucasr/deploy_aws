@@ -19,7 +19,7 @@ app.get('/somar',(request, response)=>{
 
 })
 
-app.get('/cliente',(request, response)=>{
+app.post('/cliente',(request, response)=>{
     return response.json(
     { 
         "Cliente": "Lucas",
