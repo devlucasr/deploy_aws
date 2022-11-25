@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const express = require('express')
 const app = express();
 app.use(bodyParser.json())
-const port = 3000
+const port = 8080
 
 app.get('/',(request, response)=>{
     return response.end('Bem vindo ao nosso micro-serviço')
