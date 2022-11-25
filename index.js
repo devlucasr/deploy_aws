@@ -3,11 +3,11 @@ const bodyParser = require('body-parser')
 const express = require('express')
 const app = express();
 app.use(bodyParser.json())
-const port = 8000
-
+const port = 3333
 
 app.get('/',(request, response)=>{
     return response.end('Bem vindo ao Super Servidor do Lucas')
+
 });
 
 app.get('/somar',(request, response)=>{
