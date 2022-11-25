@@ -3,10 +3,10 @@ const bodyParser = require('body-parser')
 const express = require('express')
 const app = express();
 app.use(bodyParser.json())
-const port = 3333
+const port = 8080
 
 app.get('/',(request, response)=>{
-    return response.end('Bem vindo ao Super Servidor do Lucas')
+    return response.end('Bem vindo ao nosso micro serviço')
 
 });
 
@@ -19,7 +19,7 @@ app.post('/somar',(request, response)=>{
 
 })
 
-app.get'/cliente',(request, response)=>{
+app.get('/cliente',(request, response)=>{
     return response.json(
     { 
         "Cliente": "Lucas",
