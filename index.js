@@ -10,7 +10,7 @@ app.get('/',(request, response)=>{
 
 });
 
-app.get('/somar',(request, response)=>{
+app.post('/somar',(request, response)=>{
     const body = request.body
     
     const soma = body.n1 + body.n2
@@ -19,7 +19,7 @@ app.get('/somar',(request, response)=>{
 
 })
 
-app.post('/cliente',(request, response)=>{
+app.get'/cliente',(request, response)=>{
     return response.json(
     { 
         "Cliente": "Lucas",
