@@ -3,18 +3,18 @@ const bodyParser = require('body-parser')
 const express = require('express')
 const app = express();
 app.use(bodyParser.json())
-const port = 80
+const port = 8080
 
 app.get('/',(request, response)=>{
-    return response.end('Bem vindo ao nosso micro servico')
+    const ip = request.ip;
+    return response.end(`Bem vindo ao nosso micro servico`)
+    
 
 });
 
 app.post('/somar',(request, response)=>{
     const body = request.body
-    
     const soma = body.n1 + body.n2
-    
     return response.send(`O resultado da soma é ${soma}`)
 
 })
