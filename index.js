@@ -6,7 +6,7 @@ app.use(bodyParser.json())
 const port = 8080
 
 app.get('/',(request, response)=>{
-    return response.end('Bem vindo ao nosso micro-serviço')
+    return response.end('Bem vindo ao nosso micro servico')
 
 });
 
